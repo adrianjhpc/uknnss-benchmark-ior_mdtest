@@ -4,17 +4,6 @@
 
 The storage microbenchmarks are intended to measure the performance of storage systems.
 
-## Status
-
-Stable
-
-## Maintainers
-
-[@aturner-epcc](https://github.com/aturner-epcc)
-
-**Important:** Please do not contact the benchmark maintainers directly with any questions.
-All questions on the benchmark must be submitted via the procurement response mechanism.
-
 ## Software
 
 MPI and MPI-IO are required to build and run the codes. The source code
