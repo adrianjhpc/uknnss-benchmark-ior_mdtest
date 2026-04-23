@@ -1,6 +1,12 @@
 #  UKNNSS Storage Benchmark
 
-**Note:** This benchmark/repository is closely based on the one used for the [NERSC-10 benchmarks](https://www.nersc.gov/systems/nersc-10/benchmarks/)
+This repository contains information on the GRID benchmark for the UK NNSS
+procurement. 
+
+> [!IMPORTANT]
+> Please do not contact the benchmark or code maintainers directly with any questions. All questions must be submitted via the procurement response mechanism.
+
+## Benchmark Overview
 
 The storage microbenchmarks are intended to measure the performance of storage systems.
 
@@ -10,19 +16,14 @@ MPI and MPI-IO are required to build and run the codes. The source code
 used for this benchmark is derived from IOR 3.3.0 and it is included here. 
 More information about IOR is available at https://github.com/hpc/ior.
 
-## Building the benchmark
-
-**Important:** All results submitted should be based on the versions of IOR and
+> [!CAUTION]
+> All results submitted should be based on the versions of IOR and
 mdtest included in this repository.
 
-### Permitted modifications
+> [!NOTE]
+> This benchmark/repository is closely based on the one used for the [NERSC-10 benchmarks](https://www.nersc.gov/systems/nersc-10/benchmarks/)
 
-Modifications to the benchmark application code are only permissible to enable
-correct compilation and execution on the target platform.
-Any modifications must be fully documented (e.g., as a pull request, diff or patch file)
-and reported with the benchmark results.
-
-### Manual build
+## Building the benchmark
 
 MPI and MPI-IO are required to build and run the codes.
 
@@ -36,6 +37,14 @@ After extracting the tar file, ensure that the MPI compiler wrappers (e.g.,
 This will build both IOR with the POSIX and MPI-IO interfaces and create the
 IOR executable at `src/ior`.  It will also build mdtest and place the
 executable at `src/mdtest`.
+
+### Pre-approved code modifications
+
+Modifications to the benchmark application code are only permissible to enable
+correct compilation and execution on the target platform.
+Any modifications must be fully documented (e.g., as a pull request, diff or patch file)
+and reported with the benchmark results.
+
 
 ## Running the benchmark
 
@@ -51,7 +60,7 @@ To complete the entire benchmark, two sets of measurements are required:
   the mdtest tests to be run are in the file named
   [`README.mdtest.UKNNSS.md`](README.mdtest.UKNNSS.md).
 
-## Reporting results
+## Results
 
 ### Benchmark platform description
 
