@@ -1,6 +1,6 @@
 #  UKNNSS Storage Benchmark
 
-This repository contains information on the GRID benchmark for the UK NNSS
+This repository contains information on the storage benchmark for the UK NNSS
 procurement. 
 
 > [!IMPORTANT]
