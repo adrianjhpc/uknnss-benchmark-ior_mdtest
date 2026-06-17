@@ -3,9 +3,9 @@
 
 ## I. Run Rules
 
-This benchmark is intended to measure the metadata capability of the parallel file system(s) (PFS) provided by the bidder.  It measures the rate at which a file system can create, state, and delete files, and contains features that minimise caching/buffering effects. As such, the bidder should not utilise optimisations that cache/buffer file metadata or metadata operations in compute node memory. 
+This benchmark is intended to measure the metadata capability of the parallel file system(s) (PFS) provided by the bidder.  It measures the rate at which a file system can create, stat, and delete files, and contains features that minimise caching/buffering effects. As such, the bidder should not utilise optimisations that cache/buffer file metadata or metadata operations in compute node memory. 
 
-Observed benchmark performance shall be obtained from storage systems configured as closely as possible to the proposed storage systems. If the proposed solution includes multiple file access protocols (e.g., pNFS and NFS) or multiple tiers accessible by applications, benchmark results for mdtest shall be provided for each protocol and/or tier. If  the proposed solution includes multiple, separate file systems then benchmark results for IOR shall be provided for all proposed file systems.
+Observed benchmark performance shall be obtained from storage systems configured as closely as possible to the proposed storage systems. If the proposed solution includes multiple file access protocols (e.g., pNFS and NFS) or multiple tiers accessible by applications, benchmark results for mdtest shall be provided for each protocol and/or tier. If the proposed solution includes multiple, separate file systems then benchmark results for mdtest shall be provided for all proposed file systems.
 
 Performance projections are permissible if they are derived from a similar system that is considered an earlier generation of a proposed system.
 
@@ -57,10 +57,9 @@ The following command-line flags **MUST** be changed:
 If `-u` is absent, then all MPI processes act on a shared directory.
 If `-u` is present, then each MPI process acts on its own directory.
 
-
 ## IV. Results
 
-mdtest will execute file creation, file statting, and file deletion tests for each run.  The rate of file creating/stating/deleting are reported to stdout at the conclusion of each test, and the following rates should be reported:
+mdtest will execute file creation, file statting, and file deletion tests for each run.  The rate of file creating/statting/deleting are reported to stdout at the conclusion of each test, and the following rates should be reported:
 
 * `File creation`
 * `File stat`
