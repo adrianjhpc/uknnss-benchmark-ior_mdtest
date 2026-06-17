@@ -35,12 +35,12 @@ and the maximum write bandwidth from a different run is NOT valid.
 IOR is executed as any other standard MPI application would be on the
 proposed system.  For example,
 ```
-mpirun -np 64 ior -f load1-posix-filepertask.ior
+mpirun -np 64 ior -f load1-posix-NtoN.ior
 #- or -
-srun -n 64 ./ior -f load1-posix-filepertask.ior
+srun -n 64 ./ior -f load1-posix-NtoN.ior
 ```
 will execute IOR with 64 processes and use the input configuration
-file called `load1-posix-filepertask.ior`.
+file called `load1-posix-NtoN.ior`.
 
 Annotated configuration files for required tests are supplied in the
 `inputs.UKNNSS` directory.
