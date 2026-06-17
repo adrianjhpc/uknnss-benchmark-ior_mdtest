@@ -47,8 +47,6 @@ Annotated configuration files for required tests are supplied in the
 
 ## III. Required Runs
 
-**Target Minimum Requirement:** The PFS must deliver a minimum of **800 GiB/s sustained write bandwidth per PiB of SSD** as measured using the standard IOR benchmark and Direct IO with 1MB IO blocks and a file per process. 
-
 We expect the bidder to measure the maximum performance of the following three workloads using sufficient compute nodes and concurrency to achieve their absolute maximum results:
 
 1. sequential access, large-transaction reads and writes, N to N (1 file per MPI process, Direct IO enabled)
