@@ -131,13 +131,13 @@ As mentioned above, `segmentCount` must be set so that the total
 amount of data written is greater than 1.5 times the amount of RAM on
 the compute nodes.  The total fileSize is given by
 ```
-fileSize = segmentCount * blockSize * numTasks
+fileSize = segmentCount * blockSize * numTasksPerNode * numNodes
 ```
 So for a test on nodes with 480 GiB of RAM, `fileSize` must
 be at least 720 GiB (737,280 MiB).  Assuming `blockSize=1MB` and `numTasks=64`
 is optimal, an appropriate `segmentCount` would be
 ```
-segmentCount = fileSize / ( blockSize * numTasks ) = 11520
+segmentCount = fileSize / ( blockSize * numTasksPerNode * numNodes ) = 11520
 ```
 
 Repeating the above example for the random load (3) and its fixed
@@ -146,13 +146,13 @@ block size of 4K:
 fileSize = segmentCount * 4K * numTasks
 ```
 So for a test on nodes with 480 GiB of RAM (503,316,480 KiB), `fileSize` must
-be at least 720 GB (754,974,720 KiB).  Assuming `numTasks=64`,
+be at least 720 GiB (754,974,720 KiB).  Assuming `numTasksPerNode=64` and `numNodes=1`,
 an appropriate `segmentCount` would be
 ```
-segmentCount = fileSize / ( 4K * numTasks ) = 2949120
+segmentCount = fileSize / ( 4K * numTasksPerNode * numNodes ) = 2949120
 ```
 
-## III. Results
+## IV. Results
 
 
 The bandwidth measurements to be reported are the
