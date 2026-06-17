@@ -30,6 +30,7 @@ IOR START
     randomOffset=0          # randomize order in which reads/writes occur
     writeFile=1             # perform the write component of the test
     readFile=1              # perform the read component of the test after the write component has completed
+    useO_DIRECT=1           # specify direct I//O to bypass caching
 
 RUN
 
