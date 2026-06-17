@@ -1,6 +1,6 @@
 # UKNNSS IOR Benchmark 
 
-The intent of these benchmarks is to measure the maximum bandwidth to and from the parallel file system(s) (PFS) provided by the bidder. We expect the bidder to measure the performance of three workloads to provide a single set of max read and write numbers for scoring, see [below](#iii-required-runs).
+The intent of these benchmarks is to measure the maximum bandwidth to and from the parallel file system(s) (PFS) provided by the bidder. We expect the bidder to measure the performance of a workload to provide a single set of max read and write numbers for scoring, see [below](#iii-required-runs).
 
 ## I. Run Rules
 
