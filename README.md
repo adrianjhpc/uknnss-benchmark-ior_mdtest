@@ -15,8 +15,7 @@ MPI and MPI-IO are required to build and run the codes. The source code used for
 More information about IOR is available at https://github.com/hpc/ior.
 
 > [!CAUTION]
-> All results submitted should be based on the versions of IOR and
-mdtest included in this repository.
+> All results submitted should be based on the versions of IOR included in this repository.
 
 > [!NOTE]
 > This benchmark/repository is closely based on the one used for the [NERSC-10 benchmarks](https://www.nersc.gov/systems/nersc-10/benchmarks/)
@@ -31,7 +30,7 @@ After extracting the tar file, ensure that the MPI compiler wrappers (e.g., `mpi
     ./configure
     make
 
-This will build both IOR with the POSIX and MPI-IO interfaces and create the IOR executable at `src/ior`.  It will also build mdtest and place the executable at `src/mdtest`.
+This will build both IOR with the MPI-IO interfaces and create the IOR executable at `src/ior`. 
 
 ### Pre-approved code modifications
 
