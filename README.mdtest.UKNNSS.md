@@ -81,8 +81,8 @@ The following command-line flags **MUST** be changed:
   be changed for each level of concurrency.
 * `-d /scratch` - the directory in which this test should be run.  **This
   must be an absolute path.**
-* `-N` - Node offset for each separate phase of the test.  This parameter
-  must equal 1 to ensure each phase is completed on a separate node.
+* `-N` - Process (Rank) offset for each separate phase of the test.  This parameter
+  must equal the number of processes/tests per node to ensure each phase is completed on a separate node.
 * `-u` - toggle directory sharing.
 If `-u` is absent, then all MPI processes act on a shared directory.
 If `-u` is present, then each MPI process acts on its own directory.
