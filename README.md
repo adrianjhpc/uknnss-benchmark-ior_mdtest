@@ -57,8 +57,7 @@ To complete the entire benchmark, two sets of measurements are required:
   file named [`README.ior.UKNNSS.md`](README.ior.UKNNSS.md).
 - mdtest will be used to measure the performance of various metadata operations
   using MPI to execute the operations and collect the results. The specifics of
-  the mdtest tests to be run are in the file named
-  [`README.mdtest.UKNNSS.md`](README.mdtest.UKNNSS.md).
+  the mdtest tests to be run are in the file named [`README.mdtest.UKNNSS.md`](README.mdtest.UKNNSS.md).
 
 ## Results
 
